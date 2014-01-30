@@ -1,14 +1,20 @@
 /** @jsx React.DOM */
-var React  = require('react'),
+var React    = require('react'),
 
-    Header = require('./header'),
+    Header   = require('./header'),
+    Posts    = require('./posts'),
 
     App;
 
 App = React.createClass({
     render: function () {
         return (
-            <Header/>
+            <div>
+                <Header/>
+                <div className="container content">
+                    <Posts/>
+                </div>
+            </div>
         );
     }
 });
