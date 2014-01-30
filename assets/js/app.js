@@ -1,3 +1,5 @@
+/** @jsx React.DOM */
+
 var App = {};
 
 App.start = function () {

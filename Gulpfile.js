@@ -1,10 +1,19 @@
 var gulp       = require('gulp'),
 
-    browserify = require('gulp-browserify');
+    browserify = require('gulp-browserify'),
+    concat = require('gulp-concat');
+
+gulp.task('styles', function () {
+
+    gulp.src(['assets/css/typography.css', 'assets/css/styles.css'])
+        .pipe(concat('styles.css'))
+        .pipe(gulp.dest('./build/'));
+
+});
 
 gulp.task('scripts', function () {
 
-    gulp.src(['js/app.js'])
+    gulp.src(['assets/js/app.js'])
         .pipe(browserify({
             debug: true,
             transform: [ 'reactify' ]
@@ -15,7 +24,12 @@ gulp.task('scripts', function () {
 
 gulp.task('dev', function () {
 
-    gulp.watch('js/**/*.js', [ 'scripts' ]);
+    gulp.run('build');
+
+    gulp.watch('assets/js/**/*.js', [ 'scripts' ]);
+    gulp.watch('assets/css/**/*.css', [ 'styles' ]);
 
 });
+
+gulp.task('build', [ 'styles', 'scripts' ]);
 

@@ -1,0 +1,53 @@
+/* Set Defaults for Body*/
+body {
+  line-height: 1.5;
+  font-size: 100%;
+  font-family: Proxima Nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  color: #424242; }
+
+code {
+  background: #eeeeee;
+  color: #2daebf;
+  padding: 3px 5px;
+  border: 1px solid #dddddd;
+  border-radius: 3px; }
+
+blockquote {
+  font-size: 1.33333em;
+  font-weight: 100;
+  line-height: 28px;
+  padding: 1em;
+  margin: 1em 0;
+  float: left; }
+
+blockquote:before {
+  content: '\201C';
+  font-size: 128px;
+  font-weight: 200;
+  color: #dddddd;
+  margin-left: -25px;
+  margin-bottom: 10px;
+  position: absolute; }
+
+hr {
+  display: block;
+  height: 0px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #eeeeee;
+  margin: 2em 0;
+  padding: 0; }
+
+.highlight {
+  background: lightYellow;
+  font-weight: normal; }
+
+span.fancyamp {
+  font-family: Baskerville, Palatino, "Book Antiqua", serif;
+  font-style: italic;
+  color: inherit;
+  font-size: inherit; }

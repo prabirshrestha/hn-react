@@ -11,6 +11,7 @@
   "devDependencies": {
     "gulp": "~3.5.0",
     "gulp-browserify": "~0.4.0",
-    "reactify": "~0.5.1"
+    "reactify": "~0.5.1",
+    "gulp-concat": "~2.1.7"
   }
 }

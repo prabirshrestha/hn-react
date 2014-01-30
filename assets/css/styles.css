@@ -1,0 +1,110 @@
+body {
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 92%;
+  max-width: 720px;
+  positon: relative;
+  margin: 0 auto; }
+
+header {
+  height: 50px;
+  background: #FC6621;
+  margin-bottom: 20px;
+  line-height: 50px;
+  overflow: hidden;
+  color: #FFF; }
+
+aside {
+  position: fixed;
+  width: 150px;
+  display: block;
+  left: 100px; }
+  aside ul {
+    list-style-type: none; }
+  aside ul li {
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    background: #FFF;
+    padding: 2em 1em 1em 1em;
+    margin-bottom: 1em; }
+  aside ul li a {
+    display: block;
+    color: #424242;
+    text-align: center;
+    text-decoration: none; }
+
+.logo {
+  background: url(../img/HN/logo.png) no-repeat;
+  margin: 10px 0;
+  padding: 0;
+  text-indent: -999px;
+  height: 40px;
+  display: block; }
+
+.upvote {
+  height: 13px;
+  width: 1em;
+  background: url(../img/HN/up.gif) center center no-repeat;
+  display: inline-block;
+  margin: 0;
+  padding: 0; }
+
+.posts {
+  list-style-image: url(../img/HN/up.gif);
+  margin: 1em 0 3em 0;
+  padding-left: 1.5em; }
+  .posts li {
+    margin-bottom: 1em;
+    font-weight: 600;
+    position: relative; }
+  .posts li a {
+    text-decoration: none;
+    color: #424242; }
+  .posts li:hover .url {
+    opacity: 1; }
+  .posts .url {
+    font-weight: 200;
+    font-size: 0.85em;
+    margin-left: 0.5em;
+    opacity: 0.5; }
+  .posts .url:before {
+    content: "("; }
+  .posts .url:after {
+    content: ")"; }
+  .posts small {
+    display: block;
+    font-weight: 200;
+    font-size: 0.8em; }
+
+.more,
+.more:visited {
+  margin-left: 1.5em;
+  background-color: #FC6621;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  margin-right: 3px;
+  margin-bottom: 1.5em;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  cursor: pointer; }
+
+.more:hover {
+  background-color: #d45500;
+  color: #ffffff; }
+
+.more:active {
+  top: 1px; }
+
+@media all and (max-width: 720px) {
+  .posts li {
+    border-bottom: 1px dashed #E7E7E7;
+    padding-bottom: 1em; } }
