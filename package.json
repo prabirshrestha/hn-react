@@ -12,6 +12,9 @@
     "gulp": "~3.5.0",
     "gulp-browserify": "~0.4.0",
     "reactify": "~0.5.1",
-    "gulp-concat": "~2.1.7"
+    "gulp-concat": "~2.1.7",
+    "envify": "~0.2.0",
+    "react": "~0.8.0",
+    "gulp-imagemin": "~0.1.4"
   }
 }

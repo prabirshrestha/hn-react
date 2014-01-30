@@ -37,7 +37,7 @@ aside {
     text-decoration: none; }
 
 .logo {
-  background: url(../img/HN/logo.png) no-repeat;
+  background: url(img/logo.png) no-repeat;
   margin: 10px 0;
   padding: 0;
   text-indent: -999px;
@@ -47,13 +47,13 @@ aside {
 .upvote {
   height: 13px;
   width: 1em;
-  background: url(../img/HN/up.gif) center center no-repeat;
+  background: url(img/up.gif) center center no-repeat;
   display: inline-block;
   margin: 0;
   padding: 0; }
 
 .posts {
-  list-style-image: url(../img/HN/up.gif);
+  list-style-image: url(img/up.gif);
   margin: 1em 0 3em 0;
   padding-left: 1.5em; }
   .posts li {

@@ -1,9 +1,20 @@
 /** @jsx React.DOM */
+var React  = require('react'),
 
-var App = {};
+    Header = require('./header'),
+
+    App;
+
+App = React.createClass({
+    render: function () {
+        return (
+            <Header/>
+        );
+    }
+});
 
 App.start = function () {
-    console.log('app started');
+    React.renderComponent(<App/>, document.getElementById('app'));
 };
 
 module.exports = window.App = App;
