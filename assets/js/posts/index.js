@@ -20,7 +20,10 @@ List = React.createClass({
             data:      { format: 'jsonp' },
             success: function (result) {
                 this.setState({ posts: result.items });
-            }.bind(this)
+            }.bind(this),
+            error: function () {
+                alert('error getting posts. please try again later');
+            }
         });
     },
     render: function () {
