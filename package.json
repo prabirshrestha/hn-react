@@ -1,0 +1,16 @@
+{
+  "name": "hn-react",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "~3.5.0",
+    "gulp-browserify": "~0.4.0",
+    "reactify": "~0.5.1"
+  }
+}

@@ -26,3 +26,6 @@ iisnode/
 
 # CTags
 tags
+
+# ignores specific to this repo
+build/
