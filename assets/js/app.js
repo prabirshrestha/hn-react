@@ -8,14 +8,12 @@ var React    = require('react'),
 
 App = React.createClass({
     render: function () {
-        return (
-            <div>
-                <Header/>
-                <div className="container content">
-                    <Posts/>
-                </div>
+        return <div>
+            <Header/>
+            <div className="container content">
+                <Posts/>
             </div>
-        );
+        </div>;
     }
 });
 

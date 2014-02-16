@@ -27,13 +27,11 @@ List = React.createClass({
         });
     },
     render: function () {
-        return (
-            <ol className="posts">
-                {this.state.posts.map(function (post) {
-                    return <Item post={post}/>
-                })}
-            </ol>
-        );
+        return <ol className="posts">
+            {this.state.posts.map(function (post) {
+                return <Item post={post}/>
+            })}
+        </ol>;
     }
 });
 

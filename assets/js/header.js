@@ -5,13 +5,11 @@ var React = require('react'),
 
 Header = React.createClass({
     render: function () {
-        return (
-            <header>
-                <div className="container">
-                    <h1 className="logo">Hacker News</h1>
-                </div>
-            </header>
-        );
+        return <header>
+            <div className="container">
+                <h1 className="logo">Hacker News</h1>
+            </div>
+        </header>
     }
 });
 
