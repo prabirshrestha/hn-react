@@ -29,7 +29,7 @@ List = React.createClass({
     render: function () {
         return <ol className="posts">
             {this.state.posts.map(function (post) {
-                return <Item post={post}/>
+                return <Item key={post.id} post={post}/>
             })}
         </ol>;
     }
