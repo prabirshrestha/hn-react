@@ -1,6 +1,6 @@
 # Hacker News Client built using ReactJS
 
-This is a port of the Hacker News Client writter in AnuglarJS. [https://coderwall.com/p/0pfmvq](https://coderwall.com/p/0pfmvq).
+This is a port of the Hacker News Client writter in AngularJS. [https://coderwall.com/p/0pfmvq](https://coderwall.com/p/0pfmvq).
 Source code of the angular port can be found at [https://github.com/codealpha/hn-angular](https://github.com/codealpha/hn-angular).
 
 ## What this sample isn't
