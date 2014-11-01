@@ -15,7 +15,7 @@
     "gulp-concat": "~2.4.1",
     "gulp-imagemin": "~1.2.1",
     "jquery": "~2.1.1",
-    "react": "^0.12.0-rc1",
-    "reactify": "git+https://github.com/andreypopp/reactify#c1b0e15eca"
+    "react": "^0.12.0",
+    "reactify": "0.15.2"
   }
 }
