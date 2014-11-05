@@ -27,3 +27,10 @@ gulp dev
 ```
 
 To build only use `gulp build`.
+
+## Running tests
+
+```bash
+npm install -g jest-cli
+npm test
+```
