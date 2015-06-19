@@ -14,11 +14,11 @@ List = React.createClass({
     },
     fetchLatestNews: function () {
         $.ajax({
-            url:       'http://api.ihackernews.com/page',
-            dataType:  'jsonp',
-            data:      { format: 'jsonp' },
+            url:       'https://hn.algolia.com/api/v1/search?tags=front_page',
+            dataType:  'json',
+            data:      { format: 'json' },
             success: function (result) {
-                this.setState({ posts: result.items });
+                this.setState({ posts: result.hits });
             }.bind(this),
             error: function () {
                 alert('error getting posts. please try again later');
@@ -28,7 +28,7 @@ List = React.createClass({
     render: function () {
         return <ol className="posts">
             {this.state.posts.map(function (post) {
-                return <Item key={post.id} post={post}/>
+                return <Item key={post.objectID} post={post}/>
             })}
         </ol>;
     }

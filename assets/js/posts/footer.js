@@ -6,8 +6,8 @@ Footer = React.createClass({
     render: function () {
         var post = this.props.post;
         return <small>
-            {post.points} points by {post.postedBy + ' ' + post.postedAgo} |
-            { post.commentCount } { post.commentCount === 1 ? ' comment' : ' comments' }
+            {post.points} points by {post._highlightResult.author.value + ' ' + post.created_at } |
+            { post.num_comments } { post.num_comments === 1 ? ' comment' : ' comments' }
         </small>;
     }
 });
