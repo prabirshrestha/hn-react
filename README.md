@@ -12,7 +12,7 @@ Source code of the angular port can be found at [https://github.com/codealpha/hn
 
 * shows how to use the streaming build system - [gulp.js](http://gulpjs.com/)
 * use [browserify](http://browserify.org/) - browser-side require() the node.js way
-* use reactify to help tranform jsx syntax to js
+* use [babel](https://babeljs.io) to help tranform jsx syntax to js
 * use gulp-concat
 * use-gulp-imagemin
 * shows how to split different components in different file

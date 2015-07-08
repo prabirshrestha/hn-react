@@ -17,7 +17,7 @@ gulp.task('scripts', function () {
     gulp.src(['assets/js/app.js'])
         .pipe(browserify({
             debug: true,
-            transform: [ 'reactify' ]
+            transform: [ 'babelify' ]
         }))
         .pipe(gulp.dest('build/'));
 
