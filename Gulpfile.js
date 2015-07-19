@@ -3,6 +3,7 @@ var gulp       = require('gulp'),
     browserify = require('gulp-browserify'),
     concat     = require('gulp-concat'),
     imagemin   = require('gulp-imagemin');
+    del = require('del');
 
 gulp.task('styles', function () {
 
@@ -43,3 +44,6 @@ gulp.task('dev', function () {
 
 gulp.task('build', [ 'styles', 'scripts', 'images' ]);
 
+gulp.task('clean', function(callback) {
+  del(['./build'], callback)
+});
